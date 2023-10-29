@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description">
+    <meta name="keywords" content="keywords, separated, by, commas">
+    <meta name="author" content="Your Name">
+    <title>All Products - HER WAVE</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="style.css"> <!-- Make sure to have a style.css file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="IMG-20231016-WA0000_1_-removebg-preview.png" width="200" height="200" alt="Her Wave Logo">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="blog.html">SHOP</a></li>
+                        <li><a href="doctor.html">DOCTOR</a></li>
+                        <li><a href="about_add.html">ABOUT US AND ADD</a></li>
+                        <li><a href="account.html">ACCOUNT</a></li>
+                    </ul>
+                </nav>
+                <img src="cart.png" width="30" height="30">
+                <img src="icon" class="menu-icon" onclick="menutoggle()">
+                <!-- You need to define the menu that appears when the icon is clicked -->
+            </div>
+        </div>
+    </div>
+
+
+    <!----cart items details------->
+       <div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="product1.jpeg" alt="Product 1 Image">
+                    <div class="product-details">
+                        <p>Whisper Ultra Skinlove Soft Sanitary Pads for Women</p>
+                        <span>Price: ₹799</span>
+                        <br>
+                        <a href="#">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹799</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="product2.jpeg" alt="Product 2 Image">
+                    <div class="product-details">
+                        <p>SSPANX Women's Power Mama Maternity Shaper</p>
+                        <span>Price: ₹6222</span>
+                        <br>
+                        <a href="#">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹6222</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="product3.jpeg" alt="Product 3 Image">
+                    <div class="product-details">
+                        <p>Namyaa Haldi Chandan Intimate Hygiene Wash</p>
+                        <span>Price: ₹799</span>
+                        <br>
+                        <a href="#">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹799</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>₹7820</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>₹75</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>₹7895</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!------footer----->
+
+<div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="android-app-logo.png" alt="Android App Logo">
+                        <img src="ios-app-logo.png" alt="iOS App Logo">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="your-image-source.jpg" alt="Your Image">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright-2023</p>
+        </div>
+    </div>
+
+ <!-- JavaScript for toggle menu - you should define the menu behavior here -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "10px";
+            }
+            // Define the behavior of the menu when toggled here
+        }
+    </script>
+</body>
+</html>
